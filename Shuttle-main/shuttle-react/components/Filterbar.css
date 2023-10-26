@@ -1,0 +1,33 @@
+#filterbar {
+    border: 1px solid rgb(231, 231, 231);
+    border-left: none;
+    color: rgb(74, 74, 74);
+    margin: 10px;
+    width: 100%;
+    height: fit-content;
+}
+
+.products--filter{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+}
+
+label > input {
+    margin-right: 10px;
+    transform: scale(1.5);
+}
+
+#filterbar h6 {
+    font-weight: bold;
+}
+
+.filter--section {
+    padding: 15px;
+}

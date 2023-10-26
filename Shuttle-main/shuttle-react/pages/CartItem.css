@@ -1,0 +1,32 @@
+.item--info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.item--title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item--price {
+    font-weight: bold;
+}
+
+.cart--item {
+    padding: 10px;
+    display: flex;
+    height: 180px;
+}
+
+.item--image {
+    height: 100%;
+}
+
+.item--info {
+    margin-left: 15px;
+}
+
+.item--btns button {
+    outline: none;
+}

@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: rgb(233, 233, 233);
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    box-shadow: 0px 0px 4px 1px rgb(184, 184, 184);
+    background-color: white;
+    padding: 20px 72px;
+
+    /* border: 2px solid blue; */
+}
+
+nav ul {
+    /* border: 2px solid blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    /* border: 2px solid green; */
+    margin: 0 12px;
+    list-style: none;
+}
+
+
+#searchbar {
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    height: 48px;
+    padding: 0 20px;
+    border-radius: 24px;
+    border: transparent;
+    background-color: rgb(233, 233, 233);
+    outline: none;
+}
+
+#searchbar > input {
+    width: 100%;
+    outline: none;
+    margin-left: 12px;
+    border: transparent;
+    background-color: rgb(233, 233, 233);
+}
+
+#navbar--icons a i{
+    margin: 0 12px;
+}
+
+
+#nav--content {
+    height: 48px;
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#nav--content > img {
+    height: 24px;
+} 
+
+
+.text-center {
+    text-align: center;
+}
+
+.card--section {
+    padding: 24px;
+}
+
+.card--section h2 {
+    font-family: 'Young Serif', sans-serif;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.view--all--btn {
+    display: flex;
+    justify-content: center;
+}
+
+.divider {
+    margin: auto;
+    width: 90%;
+    height: 1px;
+    background-color: rgb(209, 209, 209);
+}
+
+.footer h5 {
+    font-weight: bold;
+}
+
+#categories {
+    background-color: rgb(240, 240, 240);
+    margin: 50px 80px;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+#categories > h2 {
+    font-family: 'Young Serif', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.grid--container {
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* First column takes 1 part, second column takes 2 parts */
+    grid-gap: 20px; /* Adjust the gap between grid items as needed */
+}
+  
+.grid--item {
+    cursor: pointer;
+    height: 250px;
+    width: auto;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.item2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.item3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item4{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.item1::before,
+.item2::before,
+.item3::before,
+.item4::before
+{
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.item1::before{
+    content: 'Casual';
+}
+
+.item2::before{
+    content: 'Party';
+}
+
+.item3::before{
+    content: 'Formal';
+}
+
+.item4::before{
+    content: 'Gym';
+}
+
+.store--container {
+    display: flex;
+}
+
+@media only screen and (max-width: 800px) {
+    .grid--container {
+        display: flex;
+        flex-direction: column;
+    }
+}
