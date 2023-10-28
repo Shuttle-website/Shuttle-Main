@@ -1,0 +1,13 @@
+.custom-background {
+    background-color: black;
+    color: white;
+  }
+
+.custom-text {
+      color: white !important;
+  }
+  
+.best{
+    margin-top: 5px;
+    text-align: center;
+}

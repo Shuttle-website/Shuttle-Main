@@ -1,0 +1,46 @@
+.card--item {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 14px 6px rgb(200,200,200);
+    padding: 10px;
+    /* max-width: 250px; */
+    /* flex-grow: 1; */
+}
+
+.card--item > img {
+    border: 1px solid rgb(240,240,240);
+    border-radius: 12px;
+    /* flex-grow: 1; */
+}
+
+.card--desc {
+    font-size: 0.8rem;
+    /* flex-grow: 1; */
+}
+
+.card--item > span {
+    color: rgb(50,50,50);
+    font-size: 0.6rem;
+    /* flex-grow: 1; */
+}
+
+.card--price {
+    font-size: 0.8rem;
+    color: rgb(27, 109, 122);
+    font-weight: bold;
+    /* flex-grow: 1; */
+}
+
+.card--container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    /* flex-grow: 1; */
+    padding: 10px;
+}

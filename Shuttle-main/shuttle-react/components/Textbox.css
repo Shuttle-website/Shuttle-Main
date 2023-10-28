@@ -1,0 +1,18 @@
+
+.custom-input label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(16px);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .custom-input input {
+    padding-top: 26px;
+    padding-bottom: 6px; /* Adjust padding to match the label transition */
+  }
+  
+  .custom-input input:focus + label {
+    transform: translateY(6px);
+  }
+  
