@@ -35,10 +35,17 @@ export default function Navbar() {
     navigate("/login"); // Use navigate to redirect to the login page
   };
 
+  
+  const handleOrder = () => {
+    navigate("/Order"); // Use navigate to redirect to the login page
+  };
+
+  
+
   const handleLogout = () => {
     localStorage.removeItem('token');
     window.location.reload();
-    googleLogout();
+    // googleLogout();
   };
 
   return (
@@ -74,10 +81,16 @@ export default function Navbar() {
                 <PopoverBody>
                   {isAuthenticated ? (
                     <>
-                      <Button colorScheme="blue" onClick={handleLogout}>
+                      <Button colorScheme="blue" onClick={handleLogout} style={{ margin: '10px' }}>
                         Logout
                       </Button>
+
+                      <Button colorScheme="blue" onClick={handleOrder}>
+                        My Orders
+                      </Button>
                     </>
+
+                  
                   ) : (
                     <Button colorScheme="blue" onClick={handleLogin}>
                       Login

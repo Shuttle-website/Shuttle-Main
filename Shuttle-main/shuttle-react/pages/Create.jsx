@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import axios from 'axios'; // Import Axios for making HTTP requests
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function Create() {
